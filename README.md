@@ -8,9 +8,9 @@
 ![SignalR](https://img.shields.io/badge/SignalR-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-**A modern, browser-based SSH client with Tron Legacy aesthetic**
+**A modern, browser-based SSH client**
 
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Architecture](#-architecture)
+[Installation](#-installation) • [Usage](#-usage) • [Architecture](#-architecture)
 
 </div>
 
