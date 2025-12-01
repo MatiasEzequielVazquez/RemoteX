@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RemoteX.API/RemoteX.API.csproj" />
+    <Project Path="src/RemoteX.Core/RemoteX.Core.csproj" />
+    <Project Path="src/RemoteX.Infrastructure/RemoteX.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RemoteX.Tests/RemoteX.Tests.csproj" />
+  </Folder>
+</Solution>

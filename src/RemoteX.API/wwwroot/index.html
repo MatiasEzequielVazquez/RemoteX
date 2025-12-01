@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RemoteX - SSH Terminal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="terminal-container">
+        <div class="terminal-header">
+            <span class="title">RemoteX Terminal</span>
+            <div class="header-buttons">
+                <button id="ssh-connect-btn" class="btn-header">SSH Connect</button>
+            </div>
+        </div>
+        <div id="terminal-output"></div>
+        <div class="terminal-input-line">
+            <span class="prompt">remotex@local:~$</span>
+            <input type="text" id="terminal-input" autofocus />
+        </div>
+    </div>
+
+    <!-- Modal de conexión SSH -->
+    <div id="ssh-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>SSH Connection</h2>
+            <form id="ssh-form">
+                <div class="form-group">
+                    <label>Host:</label>
+                    <input type="text" id="ssh-host" placeholder="example.com" required />
+                </div>
+                <div class="form-group">
+                    <label>Port:</label>
+                    <input type="number" id="ssh-port" value="22" required />
+                </div>
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input type="text" id="ssh-username" placeholder="user" required />
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" id="ssh-password" required />
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Connect</button>
+                    <button type="button" id="modal-cancel" class="btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- SignalR Client Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+
+    <!-- Nuestro código -->
+    <script src="/js/app.js"></script>
+</body>
+</html>
